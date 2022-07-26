@@ -1,0 +1,23 @@
+<h2>Movie Details</h2>
+<br />
+<h2>Title: {{aMov.title}}</h2>
+<h3>Genre: {{aMov.genre}}</h3>
+<h4>Plot: {{aMov.plot}}</h4>
+
+<h5>CAST:</h5>
+<br />
+{{#each aMov.cast}}
+  <h2>Name: {{this.name}}</h2>
+  <p>Occupation: {{this.occupation}}</p>
+  <p>Catch Phrase: {{this.catchPhrase}}</p>
+{{/each}}
+
+<form action="/movies/{{aMov._id}}/delete" method="POST">
+  <button type="submit">Delete Movie</button>
+</form>
+<a href="/movies/{{aMov._id}}/edit"><button>Edit the Movie</button></a>
+
+<br />
+
+<hr />
+<a href="/movies"><button>Back to Movies list</button></a>

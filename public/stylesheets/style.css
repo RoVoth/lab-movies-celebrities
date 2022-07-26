@@ -1,4 +1,6 @@
 body {
+  color: white;
+  background-image: url("/images/background.jpg");
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
